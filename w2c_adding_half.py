@@ -52,8 +52,7 @@ def number_from_half(s : str):
     return res
 
 def main():
-    """add all binary16 numbers from standard input until a non-number is entered, then print the total.
-    Numbers are represented in 4-character hex string format, one per line"""
+   
 
 
 
@@ -80,9 +79,13 @@ except:
         res=res+a
     print(res)
     
+print("spotify have too much advertise, and it is not that good!")
 
+print("how can I see the changes in all those files")
 
+print (" I would like to have some cream")
 
+print( "I SHOULD DELETE SOMETHING")
 
 
 
