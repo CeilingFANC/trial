@@ -1,14 +1,22 @@
-# trial
-end of the day
+# Fluigi
+The repository that will host the fluigi binaries for the class
 
 
-WHY I AM DOING THIS,
+## Requirements
 
+Please install the latest Java Runtime >1.8
 
-WHAT DOES THIS README STUFF DO?
+## Usage
+To run the program, use:
+```
+java [-Xmx????m] -jar fluigi filename [-i parameterFile] [-o outputformat] [-v|h]
+```
+The flags are as follows:
 
-
-
-add stuff into the Bun
-DElicious Bun why japan have that strange Bun.? It looks more like rice hambuger to me...And that ramen is not that good, maybe try the one at the super 88
-why so many elder graduate student. maybe I should take the cooking class.... what am i doing awarkward .
+```
+-i / --input : Input parameter file
+-o / --output: output format
+-v / --hdl : Verilog input
+-h / --help : Prints out usage
+```
+The Java flag [-Xmx????m] will ensure that ???? Megabytes of RAM is allocated for the Java virtual machine. This might be necessary in scenarios where the computer might by default allocate a smaller chunk of memory.
