@@ -1,0 +1,33 @@
+DEVICE dynamic_trap
+
+LAYER FLOW
+PORT po1,po2 r=100;
+NODE p1, p2, p3, p4; #tube is 30, 2*r=30
+
+ #horizontal placed
+
+CHANNEL c1 from p1 1 to p2 3  w=30; #long branch
+CHANNEL c2 from p2 2 to p3 4  w=30; #long branch
+CHANNEL c3 from p3 3 to p4 1  w=30; #long branch
+
+CHANNEL c4 from p1 2 to p4 4  w=30; #short branch controled by valve, where the microbead is trapped.
+
+CHANNEL c100 from po1 2 to p1 4  w=30; #long branch
+CHANNEL c101 from po2 4 to p4 2  w=30; #long branch
+
+TERMINAL 1 po1;
+TERMINAL 2 po2;
+
+
+
+
+END LAYER
+
+LAYER CONTROL
+PORT p03 r=100;
+VALVE v1 on c4 w=60 l=10;
+CHANNEL c01 from p03 1 to v1 3  w=20;
+
+TERMINAL 3 p03;
+
+END LAYER
